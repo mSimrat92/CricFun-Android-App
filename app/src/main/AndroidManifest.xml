@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sachinsharma.cricfun">
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="DATABASE" android:value="sugar_example.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example.sachinsharma.cricfun" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScoreCard"
+            android:label="Back"
+            android:parentActivityName=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ScoreCard" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".TwitterActivity"
+            android:label="Back"
+            android:parentActivityName=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.TwitterActivity"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomePage"
+            android:label="Back"
+            android:parentActivityName=".TwitterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.HomePage"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

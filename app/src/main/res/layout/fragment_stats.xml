@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:fillViewport="false"
+    android:layout_below="@+id/textb"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout1">
+    <TextView
+        android:layout_margin="10dp"
+        android:background="@color/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Match Statistics"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dip"
+        android:id="@+id/scoreGraph"
+        android:layout_marginBottom="5dp"
+       />
+    <com.jjoe64.graphview.GraphView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dip"
+        android:id="@+id/wicketsGraph"
+        />
+    <TextView
+        android:id="@+id/textb"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Please Scroll up"
+        android:visibility="invisible"/>
+</LinearLayout>
+
+</ScrollView>

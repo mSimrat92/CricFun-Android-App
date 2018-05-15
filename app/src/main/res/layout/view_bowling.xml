@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:weightSum="11"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spinner_bg">
+        <TextView
+            android:id="@+id/bowler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:text="Simratpal Singh"/>
+        <TextView
+            android:id="@+id/Overs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:text="100"/>
+        <TextView
+            android:id="@+id/bRuns"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:text="40"/>
+
+        <TextView
+            android:id="@+id/Wickets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:text="not out"/>
+
+
+    </TableRow>
+
+
+</TableLayout>

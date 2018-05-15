@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_currentMatches"
+            android:icon="@drawable/ic_menu_matches"
+            android:title="Current Matches" />
+        <item
+            android:id="@+id/nav_Results"
+            android:icon="@drawable/ic_menu_results"
+            android:title="Recent Results" />
+        <item
+            android:id="@+id/nav_News"
+            android:icon="@drawable/ic_menu_news"
+            android:title="News" />
+
+
+    </group>
+
+    <item android:title="Media">
+        <menu>
+            <item
+                android:id="@+id/nav_videos"
+                android:icon="@drawable/ic_menu_videos"
+                android:title="Videos" />
+            <item
+                android:id="@+id/nav_photos"
+                android:icon="@drawable/ic_menu_photos"
+                android:title="Photos" />
+        </menu>
+    </item>
+
+    <item android:title="Stats">
+        <menu>
+            <item
+                android:id="@+id/nav_pointsTable"
+                android:icon="@drawable/ic_menu_table"
+                android:title="Points Table"/>
+            <item
+                android:id="@+id/nav_PlayerProfiles"
+                android:icon="@drawable/ic_menu_profile"
+                android:title="Player Profile"/>
+        </menu>
+    </item>
+
+</menu>
